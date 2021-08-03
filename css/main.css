@@ -105,6 +105,8 @@ textarea {
  ul,
  ol {
    list-style-type: none;
+   margin: 0;
+   padding: 0;
  }
 
 a {
@@ -116,6 +118,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
@@ -132,11 +135,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -145,16 +148,9 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px;
+  margin: 50px 0;
 }
 
-img {
-	width: 100%;
-}
-
-figure {
-        margin: 0;
-}
 
 
    /* --------- Base Header - Footer Styles --------*/
@@ -196,6 +192,7 @@ header nav {
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -217,7 +214,6 @@ header figure {
 }
 
 footer {
-
   text-align: center;
   flex-direction: column;
 }
@@ -238,12 +234,6 @@ footer .contact {
 footer .social-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -275,7 +265,7 @@ footer .copyright {
   background: url(../img/unplugged-retreat.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 500;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -410,7 +400,7 @@ input[type=button] {
     left: 0;
 }
 
-.contain-section {
+.contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
@@ -418,7 +408,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.content-contact p {
+.contact-content p {
   margin: 0;
 }
 
@@ -589,10 +579,15 @@ input[type=button] {
    }
 
    /* Hero Area */
+
+   .hero-area {
+     min-height: 600px;
+   }
+
    .hero-area h1 {
-   font-size: 3em;
-   line-height: 1;
-   margin: 0;
+     font-size: 3em;
+     line-height: 1;
+     margin: 0;
  }
    /* Aside */
 
@@ -705,6 +700,10 @@ input[type=button] {
       width: 45%;
     }
 
+    .map figure {
+      padding-bottom: 45.5%;
+    }
+
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -717,10 +716,6 @@ input[type=button] {
 
     .contact-content h4 {
       font-size: 1.5em;
-    }
-
-    .map figure {
-      padding-bottom: 45.5%;
     }
 
 
@@ -801,10 +796,10 @@ input[type=button] {
      flex-basis: 33%;
    }
 
-   .features i {
+   /*.features i {
      font-size: 3.75em;
      margin-bottom: 40px;
-   }
+   }*/
 
    /*Reviews*/
 
@@ -825,7 +820,7 @@ input[type=button] {
    ================*/
 
    .mission h2,
-   .contact-session .content-wrapper h2 {
+   .contact-section .content-wrapper h2 {
      width: 95%;
      font-size: 3em;
    }
