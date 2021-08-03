@@ -342,6 +342,11 @@ input[type=button] {
   margin: 0;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /* Reviews */
 
 .reviews {
@@ -607,6 +612,11 @@ input[type=button] {
      width: 62%;
    }
 
+   .features i {
+     font-size: 3.75em;
+     margin-bottom: 40px;
+   }
+
    /* Reviews */
 
    .reviews article {
@@ -768,6 +778,11 @@ input[type=button] {
 
    .features article {
      flex-basis: 33%;
+   }
+
+   .features i {
+     font-size: 3.75em;
+     margin-bottom: 40px;
    }
 
    /*Reviews*/
